@@ -1,0 +1,11 @@
+[Unit]
+Description=Layout automatico de teclado no COSMIC (interno br / HyperX us-intl)
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/kb-cosmic-auto.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
